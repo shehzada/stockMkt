@@ -27,7 +27,7 @@ public class FindBestBuySellPrice {
                     opt.ifPresent(bestSell -> results.put("bestBuySellPrices",(new BestTrades(tradeList.get(bestBuy), tradeList.get(bestSell)))));
                 });
         long endTime = System.nanoTime() - startTime;
-        System.out.println(" time take " + endTime / 1000 + " ms");
+        System.out.println(" time take " +  (System.nanoTime() - startTime) / 1000000 + " millisec");
         return results;
     }
     
@@ -46,7 +46,7 @@ public class FindBestBuySellPrice {
                             });
                 } );
         long endTime = System.nanoTime() - startTime;
-        System.out.println("Boxed version time take " + endTime / 1000 + " ms");
+        System.out.println("Boxed version time take " +   (System.nanoTime() - startTime) / 1000000 + " millisec");
         return results;
     }
 }
