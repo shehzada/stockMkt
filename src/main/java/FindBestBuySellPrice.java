@@ -1,3 +1,5 @@
+package stockmarket.trades;
+
 import stockmarket.trades.vo.BestTrades;
 
 import java.util.Arrays;
