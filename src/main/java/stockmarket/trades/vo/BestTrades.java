@@ -1,4 +1,4 @@
-package stockmarket.trades.vo
+package stockmarket.trades.vo;
 
 /**
  * Created by shehzada on 22/07/2016.
