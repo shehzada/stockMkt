@@ -18,7 +18,7 @@ public class FindBestTradePriceTest {
     public void test_trades1_best_trades(){
         List<Double> tradeList = Arrays.asList(19.35, 19.30, 18.88, 18.93, 18.95, 19.03, 19.00, 18.97, 18.97, 18.98);
         FindBestBuySellPrice fb = new FindBestBuySellPrice();
-        Map<String,BestTrades> results = fb.getBestTradePrices(tradeList);
+        Map<String,BestTrades> results = fb.getBestTradePrices2(tradeList);
         BestTrades bt = results.get("bestBuySellPrices");
         Assert.assertEquals("best buy price", 18.88, bt.getBestBuy());
         Assert.assertEquals("best sell price", 19.03, bt.getBestSell());
