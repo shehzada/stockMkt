@@ -20,6 +20,7 @@ public class BestTrades {
         return bestSell;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
